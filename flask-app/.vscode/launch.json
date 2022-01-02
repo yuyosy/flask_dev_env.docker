@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Run Flask with debugger",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "python": "${command:python.interpreterPath}",
+            "module": "flask",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload",
+                "--port=5001",
+                "--host=0.0.0.0"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
